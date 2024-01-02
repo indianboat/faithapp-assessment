@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.what_to_expect ul,
+.key-topics ol {
+  display: flex;
+  flex-direction: column;
+  @apply gap-1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.what_to_expect li,
+.key-topics ol li {
+  display: inline;
+  list-style-type: none;
+  background: url(/check.svg) no-repeat left top;
+  background-size: 16px;
+  padding: 0 0 0 30px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333 !important;
+  background: #fff;
+  width: 10px !important;
+  height: 30px !important;
+  padding: 0px 14px !important;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 50px !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  box-shadow: 0 0 2px 1px #f1f1f1;
+}
+
+.swiper-button-prev {
+  left: 6px !important;
+}
+.swiper-button-next {
+  right: 6px !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14px !important;
 }
