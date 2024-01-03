@@ -76,8 +76,8 @@ const ReviewSection = ({ data }) => {
           )}
         >
           {
-            [1, 2, 3].map(() => (
-              <div className="">
+            [1, 2, 3].map((_, index) => (
+              <div className="" key={index}>
                 <div className="w-full">
                   <h1 className='font-semibold px-8 lg:text-[16px] md:text-[15px] sm:text-[12px] text-[12px] text-gray-950 text-center'>
                     &quot;{data?.testimonial?.text}&quot;
