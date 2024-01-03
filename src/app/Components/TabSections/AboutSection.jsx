@@ -6,7 +6,7 @@ const AboutSection = ({ data }) => {
 
   return (
     <>
-      <div className="mt-8">
+      <div className="mt-8 w-full">
         {/* About the course */}
         <h1 className="text-2xl font-bold">About the course</h1>
         <div className="mt-4 flex flex-col gap-3" dangerouslySetInnerHTML={{ __html: data?.course?.about?.html_content }}></div>

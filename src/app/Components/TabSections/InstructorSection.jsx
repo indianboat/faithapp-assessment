@@ -23,25 +23,25 @@ const InstructorSection = ({ data }) => {
             <div className="" dangerouslySetInnerHTML={{ __html: data?.about_instructor?.html_content }}></div>
             <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 gap-6">
               {
-                data?.instructor?.social_media?.facebook ? <Link href="#!" className="flex hover:bg-slate-100 px-3 py-2 border-2 rounded-lg items-center gap-2">
+                data?.instructor?.social_media?.facebook ? <Link href="#!" className="flex hover:bg-blue-gray-50 px-3 py-2 border-2 rounded-lg items-center gap-2">
                   <span className='block'><FacebookIcon /></span>
                   <span>Facebook</span>
                 </Link> : null
               }
               {
-                data?.instructor?.social_media?.instagram ? <Link href="#!" className="flex hover:bg-slate-100 px-3 py-2 border-2 rounded-lg items-center gap-2">
+                data?.instructor?.social_media?.instagram ? <Link href="#!" className="flex hover:bg-blue-gray-50 px-3 py-2 border-2 rounded-lg items-center gap-2">
                   <InstagramIcon />
                   <span>Instagram</span>
                 </Link> : null
               }
               {
-                data?.instructor?.social_media?.twitter ? <Link href="#!" className="flex hover:bg-slate-100 px-3 py-2 border-2 rounded-lg items-center gap-2">
+                data?.instructor?.social_media?.twitter ? <Link href="#!" className="flex hover:bg-blue-gray-50 px-3 py-2 border-2 rounded-lg items-center gap-2">
                   <XTwitterIcon />
                   <span>Twitter</span>
                 </Link> : null
               }
               {
-                data?.instructor?.social_media?.youtube ? <Link href="#!" className="flex hover:bg-slate-100 px-3 py-2 border-2 rounded-lg items-center gap-2">
+                data?.instructor?.social_media?.youtube ? <Link href="#!" className="flex hover:bg-blue-gray-50 px-3 py-2 border-2 rounded-lg items-center gap-2">
                   <YoutubeIcon />
                   <span>Youtube</span>
                 </Link> : null

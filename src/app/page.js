@@ -50,13 +50,13 @@ export default function Home() {
             </div>
 
             {
-              selectedTab == "about" ? <AboutSection data={data} /> : selectedTab == "instructor" ? <InstructorSection data={data} /> : selectedTab == "reviews" ? <ReviewSection data={data} /> : <AboutSection data={data} />
+              selectedTab == "about" ? <AboutSection data={data} /> : selectedTab == "instructor" ? <InstructorSection data={data} /> : selectedTab == "reviews" ? <ReviewSection data={data} /> : null
             }
           </div>
         </div>
 
         {/* course fee section */}
-        <div className="lg:w-4/12 md:w-4/12 sm:w-full w-full h-fit p-5 bg-slate-50 lg:-translate-y-12 md:-translate-y-11 sm:-translate-y-6 translate-y-2">
+        <div className="lg:w-4/12 md:w-4/12 sm:w-full w-full h-fit p-5 bg-blue-gray-50 lg:-translate-y-12 md:-translate-y-11 sm:-translate-y-6 translate-y-2">
           <h1 className="font-medium text-xl">Course Fees</h1>
           <span className="font-bold text-3xl">{data?.course?.fee?.currency == "INR" ? "₹" : "$"} {data?.course?.fee?.amount}</span>
 
